@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whiter"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_myfollow_headbar" />
+
+    <LinearLayout
+        android:id="@+id/ly_functionSetting"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/wb_info_linearlayout_selector"
+        android:clickable="true"
+        android:orientation="vertical" >
+   
+        <TextView
+            android:id="@+id/tv_functions"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawableRight="@drawable/wb_timeline_lbs_button_more"
+            android:gravity="left|fill_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:text="@string/function_setting"
+            android:enabled="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corner_view_small"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1.0"
+            android:drawableRight="@drawable/wb_timeline_lbs_button_more"
+            android:gravity="left|fill_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:text="@string/about"
+            android:textColor="@color/black"
+            android:background="@drawable/wb_info_toplist_selector1"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/blank_color" />
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1.0"
+            android:drawableRight="@drawable/wb_timeline_lbs_button_more"
+            android:gravity="left|fill_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/black"
+            android:text="@string/manual_update"
+            android:background="@drawable/wb_info_toplist_selector2"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/blank_color" />
+
+        <TextView
+            android:id="@+id/tv_weibo"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1.0"
+            android:drawableRight="@drawable/wb_timeline_lbs_button_more"
+            android:gravity="left|fill_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/black"
+            android:text="@string/official_weibo"
+            android:background="@drawable/wb_info_toplist_selector3"
+            android:textSize="16dp" />
+    </LinearLayout>
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corner_view_small"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_loginout"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1.0"
+            android:drawableRight="@drawable/wb_timeline_lbs_button_more"
+            android:gravity="left|fill_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:text="@string/str_accountManagement"
+            android:textColor="@color/black"
+            android:background="@drawable/wb_info_toplist_selector1"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/blank_color" />
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1.0"
+            android:drawableRight="@drawable/wb_timeline_lbs_button_more"
+            android:gravity="left|fill_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/black"
+            android:text="@string/exit"
+            android:background="@drawable/wb_info_toplist_selector3"
+            android:textSize="16dp" />
+
+      
+    </LinearLayout>
+</LinearLayout>

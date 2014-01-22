@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whiter"
+    android:orientation="vertical" >
+	
+    
+    
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:id="@+id/btn_writeLetter"
+        android:background="@drawable/wb_writeletter_selector"
+		android:drawableLeft="@drawable/wb_icon_titile_sendpm_nor" 
+		android:text="@string/write_letter"  
+		android:gravity="center"   
+		android:textColor="@android:color/white"
+		android:paddingLeft="100dip"
+		android:paddingRight="100dip"
+        />
+    
+    <net.weibo.app.widget.PullToRefreshListView
+        android:id="@+id/letters_pullToRefreshListView "
+        style="@style/widget_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

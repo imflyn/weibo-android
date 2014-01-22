@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="silver">#C0C0C0</color>
+    <color name="whiter">#EDEDED</color>
+    <color name="translucent">#00000000</color>
+    <color name="lbs_gray">#ff989898</color>
+    <color name="lbs_blue">#ff0083cd</color>
+    <color name="black">#ff000000</color>
+    <color name="lightblack">#636363</color>
+    <color name="white">#ffffffff</color>
+    <color name="listen_name_color">#69B1FF</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="blank_color">#ffa4afc2</color>
+    <color name="textview_blue">#48BFFA</color>
+      <color name="transparent">#00000000</color>
+    <color name="transparent_cover">#25000000</color>
+    <color name="link">#3A86FF</color>
+    <color name="link_click">#F2E8BF</color>
+    <color name="repost_news_back">#E9F5F1</color>
+    <color name="stategray">#708090</color>
+    <color name="emopanel">#ff495465</color>
+    
+    
+    
+    
+    
+    
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+</resources>

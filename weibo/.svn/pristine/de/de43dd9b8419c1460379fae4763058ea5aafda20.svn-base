@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whiter"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_home_headbar" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <net.weibo.app.widget.PullToRefreshListView
+            android:id="@+id/pullToRefreshListView "
+            style="@style/widget_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ProgressBar
+            android:id="@+id/pb_load"
+            style="@style/RotateProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:indeterminateDuration="500"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btn_toTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@null"
+            android:src="@drawable/top_still"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

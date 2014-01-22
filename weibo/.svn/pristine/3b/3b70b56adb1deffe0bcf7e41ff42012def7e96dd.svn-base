@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/corner_view_small"
+    >
+	<ImageView
+	    android:id="@+id/iv_search"
+	    android:layout_width="35dip"
+	    android:layout_height="fill_parent"
+	    android:src="@drawable/wb_icon_search"
+		android:scaleType="center"	    
+	     />
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/iv_search"
+        android:hint="@string/search"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:background="@android:color/transparent"
+        />	
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_myinfo_edit_headbar" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="3dip"
+            android:padding="5dip"
+            android:background="@null"
+            android:src="@drawable/wb_head_default" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_bottom_menu"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip" >
+
+            <net.weibo.app.widget.KeyboardControlEditText
+                android:id="@+id/status_new_content"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/wb_icon_write_box"
+                android:fadeScrollbars="true"
+                android:gravity="left|top"
+                android:hint="@string/say_something"
+                android:paddingLeft="13dip"
+                android:paddingTop="8dip"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_length"
+                android:layout_width="48dip"
+                android:layout_height="30dip"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/transparent_cover"
+                android:gravity="center"
+                android:text="140"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" 
+                />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/wb_write_lbs"
+                android:gravity="center"
+                android:paddingLeft="30dip"
+                android:paddingRight="25dip"
+                android:text="苏州市区"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                 />
+            
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+ 
+            <ImageButton
+                android:id="@+id/menu_pic"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:src="@drawable/wb_write_pic_selector"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/menu_geo"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:src="@drawable/wb_icon_write_lbs_nor"
+                android:visibility="gone"
+                 />
+ 
+            <ImageButton
+                android:id="@+id/menu_at"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:src="@drawable/wb_icon_write_at_selector" />
+
+            <ImageButton
+                android:id="@+id/menu_emoticon"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:src="@drawable/wb_write_expression_selector" />
+  
+
+            <ImageButton
+                android:id="@+id/menu_topic"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@color/transparent"
+                android:src="@drawable/wb_write_topic_selector" />
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+     <net.weibo.app.widget.SmileyPicker
+        android:id="@+id/smiley_picker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_tab_font_size">13sp</dimen>
+    <dimen name="bottom_tab_padding_bottom">-11dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">-15.0dip</dimen>
+    <dimen name="updatebar_height">62.0dip</dimen>
+    <dimen name="updatebar_content_height">60.0dip</dimen>
+    <dimen name="updatebar_padding">10.0dip</dimen>
+    <dimen name="timeline_avatar_height">60dp</dimen>
+    <dimen name="timeline_avatar_width">60dp</dimen>
+    <dimen name="timeline_pic_high_thumbnail_height">230dp</dimen>
+      <dimen name="browser_msg_avatar_height">@dimen/timeline_avatar_height</dimen>
+    <dimen name="browser_msg_avatar_width">@dimen/timeline_avatar_width</dimen>
+    <dimen name="browser_msg_bg_padding">10dp</dimen>
+    
+       <!--write weibo emotion size-->
+     <dimen name="emotion_size">25dp</dimen>
+    <dimen name="emotion_bg_size">40dp</dimen>
+    
+    
+    <!--browser picture-->
+    <dimen name="browser_pic_bottom_button_layout_padding">0dp</dimen>
+    <dimen name="browser_pic_activity_width">-1px</dimen>
+</resources>

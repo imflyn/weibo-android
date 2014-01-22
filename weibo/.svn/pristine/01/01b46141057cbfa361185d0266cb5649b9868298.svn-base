@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wb_detail_msg_line"
+        android:clickable="true"
+        android:padding="8dp" >
+
+        <net.weibo.app.widget.TimeLineAvatarImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/browser_msg_avatar_width"
+            android:layout_height="@dimen/browser_msg_avatar_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/avatar"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/lbs_blue"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_repost"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_alignBottom="@id/avatar"
+            android:layout_alignLeft="@id/username"
+            android:layout_below="@id/username"
+            android:layout_marginLeft="-5dip"
+            android:background="@drawable/btn_selector_1"
+            android:drawableLeft="@drawable/icon_browser_switch"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:paddingRight="12dip"
+            android:text="@string/rewrite"
+            android:textColor="@color/blank_color"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_alignBottom="@id/avatar"
+            android:layout_below="@id/username"
+            android:layout_toRightOf="@id/btn_repost"
+            android:background="@drawable/btn_selector_1"
+            android:drawableLeft="@drawable/icon_comment"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:paddingRight="12dip"
+            android:text="@string/comment"
+            android:textColor="@color/blank_color"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_alignBottom="@id/avatar"
+            android:layout_below="@id/username"
+            android:layout_toRightOf="@id/btn_comment"
+            android:background="@drawable/btn_selector_1"
+            android:drawableLeft="@drawable/icon_tabbar_more"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:paddingRight="12dip"
+            android:text="@string/more_ch"
+            android:textColor="@color/blank_color"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/browser_msg_bg_padding" >
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+        <net.weibo.app.widget.WeiboDetailImageView
+            android:id="@+id/content_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:minHeight="0dp"
+            android:minWidth="200dp"
+            android:padding="3dp"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/content_pic_multi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="false"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:rowCount="3"
+            android:useDefaultMargins="false"
+            android:visibility="gone" >
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+        </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/repost_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/repost_news_back"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="@dimen/browser_msg_bg_padding"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/repost_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <net.weibo.app.widget.WeiboDetailImageView
+            android:id="@+id/repost_content_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:minHeight="0dp"
+            android:minWidth="200dp"
+            android:padding="3dp"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/repost_content_pic_multi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="false"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:rowCount="3"
+            android:useDefaultMargins="false"
+            android:visibility="gone" >
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+
+            <net.weibo.app.widget.MultiPicturesChildImageView style="@style/listViewMultiImageView" />
+        </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@null"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="3dip"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/lbs_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/time"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/time"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/lbs_blue"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/count_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:id="@+id/repost_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/timeline_repost_dark"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textColor="@color/lbs_gray" />
+
+            <TextView
+                android:id="@+id/comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:drawableLeft="@drawable/timeline_comment_dark"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textColor="@color/lbs_gray" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

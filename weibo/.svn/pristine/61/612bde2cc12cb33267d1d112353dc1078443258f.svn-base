@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_preference"
+        android:icon="@drawable/wb_menu_01"
+        android:title="@string/setting"/>
+      <item
+        android:id="@+id/menu_account_manager"
+        android:icon="@drawable/wb_menu_04"
+        android:title="@string/str_accountManagement"/>
+   
+  
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@drawable/wb_menu_05"
+        android:title="@string/manual_update"/>
+    <item
+        android:id="@+id/menu_exit"
+        android:icon="@drawable/wb_menu_06" 
+        android:title="@string/exit"/>
+
+</menu>
