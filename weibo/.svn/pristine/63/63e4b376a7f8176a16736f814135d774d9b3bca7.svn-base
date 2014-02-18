@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-  <net.weibo.app.widget.HorizontalListView
-    xmlns:android="http://schemas.android.com/apk/res/android"  
-  	android:id="@+id/horizontalListView"
-  	android:layout_width="fill_parent"
-  	android:layout_height="wrap_content"
-  	android:background="@drawable/wb_wall_avatar"
-  />     
