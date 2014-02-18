@@ -11,7 +11,6 @@ import net.weibo.app.bean.NewsData;
 import net.weibo.app.bean.NewsList;
 import net.weibo.app.widget.PullToRefreshListView;
 import net.weibo.common.TimeTool;
-import net.weibo.common.UIUtils;
 import net.weibo.common.Utility;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -194,7 +193,7 @@ public class NewsListVIPAtMeFragment extends AbstractAppFragment
             super.onPostExecute(result);
             if (null == result)
             {
-                UIUtils.ToastMessage(getActivity().getApplicationContext(), "服务器不稳定,暂时无法加载最新评论!");
+//                UIUtils.ToastMessage(getActivity().getApplicationContext(), "服务器不稳定,暂时无法加载最新评论!");
             } else
             {
                 if (result.getHasnext() == 0)

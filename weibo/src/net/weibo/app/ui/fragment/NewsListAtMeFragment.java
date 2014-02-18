@@ -198,7 +198,7 @@ public class NewsListAtMeFragment extends AbstractAppFragment
             super.onPostExecute(result);
             if (null == result)
             {
-                UIUtils.ToastMessage(getActivity().getApplicationContext(), "服务器不稳定,暂时无法加载最新评论!");
+//                UIUtils.ToastMessage(getActivity().getApplicationContext(), "服务器不稳定,暂时无法加载最新评论!");
             } else
             {
                 if (result.getHasnext() == 0)
